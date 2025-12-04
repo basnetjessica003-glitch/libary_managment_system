@@ -109,7 +109,17 @@ def login_users(users_dict):
         print("invalid username or password!")
         return None
     
-    
+login_user(users_dict)
+
+### now book operation start
+### main menu function
+
+def main_menu():
+    """display main menu option"""
+    print("="*55)
+    print("\ libary managment system")
+    print("="*55)
+    print
 
 
 
