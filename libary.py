@@ -92,9 +92,24 @@ if username in users_dict:
         print("registration successfull!")
         return True
 
-users_dict = load_user()
-print(users_dict)
-register_user(users_dict)
+#users_dict = load_user()
+#print(users_dict)
+#register_user(users_dict)
+
+def login_users(users_dict):
+    print("\n------login user-----")
+    username = input("enter username:").strip()
+    password = input("enter password:").strip()
+
+
+    if username in users_dict and users_dict[username]== password:
+        print(f"welcome!{username .capitalize ()}")
+        return username
+    else:
+        print("invalid username or password!")
+        return None
+    
+    
 
 
 
